@@ -12,7 +12,8 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-python.python"
+        "ms-python.python",
+        "lohaaa.commit-message-auto"
       ],
       "settings": { 
         "terminal.integrated.shell.linux": "/bin/bash",
