@@ -13,11 +13,11 @@ This SDK is **generated code** from OpenAPI specs using [Stainless](https://stai
 - **Sync client**: `OpenAI(api_key=...)` in [src/openai/_client.py](src/openai/_client.py)
 - **Async client**: `AsyncOpenAI(api_key=...)` for async operations
 - **Base HTTP layer**: [src/openai/_base_client.py](src/openai/_base_client.py) (httpx-based, retry logic, auth headers)
-- **Resources pattern**: [src/openai/resources/](src/openai/resources/) organizes API endpoints (e.g., `chat/completions`, `images`, `audio`)
+- **Resources pattern**: `src/openai/resources/` organizes API endpoints (e.g., `chat/completions`, `images`, `audio`)
 
 ## Resource/API Structure
 
-Resources inherit from `SyncAPIResource` or `AsyncAPIResource` (in [_resource.py](src/openai/_resource.py)) which provide:
+Resources inherit from `SyncAPIResource` or `AsyncAPIResource` (in [_resource.py](../../src/openai/_resource.py)) which provide:
 - `self._get()`, `self._post()`, `self._patch()`, `self._put()`, `self._delete()` methods
 - `self._get_api_list()` for pagination support
 
